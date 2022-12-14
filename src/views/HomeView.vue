@@ -1,9 +1,16 @@
 <script setup>
-import TheWelcome from "../components/TheWelcome.vue";
+import CompanyCard from "../components/CompanyCard.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <v-container>
+      <v-row dense>
+        <CompanyCard />
+        <CompanyCard />
+        <CompanyCard />
+        <CompanyCard />
+      </v-row>
+    </v-container>
   </main>
 </template>
