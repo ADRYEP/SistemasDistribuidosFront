@@ -1,3 +1,4 @@
+import CompanyDetailVue from "@/components/CompanyDetail.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
@@ -8,6 +9,11 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+    },
+    {
+      path: "/CompanyDetail/:Uuid",
+      name: "CompanyDetail",
+      component: CompanyDetailVue,
     },
     // {
     //   path: "/about",
